@@ -1,0 +1,124 @@
+﻿@model tez.Models.TblİşArayan
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Güncelle", "İşArayanProfil", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="panel panel-heading">
+            <div class="panel-body" style="margin-top: 20px">
+                <div class="form-group col-md-4">
+                    <img src="~/web/images/foto.png" alt="news image" class="img-fluid img-circle" width="160" , height="160">
+                    <br /><br />
+                    <input type="button" value="Profili_Fotoğrafını_Düzenle" class="btn btn-success" />
+                </div>
+                <div class="form-group col-md-4">
+                    <h3>Ad:  @Html.TextBoxFor(s => s.Ad, new { @class = "form-control", @id = "Ad" })</h3>
+
+
+                </div>
+                <div class="form-group col-md-4">
+
+                    <h3>Soyad:  @Html.TextBoxFor(s => s.Soyad, new { @class = "form-control", @id = "Soyad" })</h3>
+
+                </div>
+                <br /><br />
+                <div class="form-group col-md-4">
+                    <p class="lead">
+                        Kullanıcı Adı:  @Html.TextBoxFor(s => s.KullanıcıAdı, new { @class = "form-control", @id = "KulanıcıAdı" })
+
+                    </p>
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">
+                        Doğum Tarihi:  @Html.TextBoxFor(s => s.D_Tarihi, new { @class = "form-control", @id = "D_Tarihi" })
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body" style="margin-top: 10px">
+                <div class="form-group col-md-4">
+                    <p class="lead">Hakkınızda:</p>
+                    @Html.TextAreaFor(s => s.Hakkında, 20, 150, new { @class = "form-control", @id = "Hakkında" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Eğitim Bilgileriniz:</p>
+                    @Html.TextAreaFor(s => s.Egitim, 20, 150, new { @class = "form-control", @id = "Egitim" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Hedefleriniz: </p>
+                    @Html.TextAreaFor(s => s.Hedefler, 20, 150, new { @class = "form-control", @id = "Hedefler" })
+                </div>
+                @*<div class="form-group col-md-4">
+                        <p class="lead">Kuruluş Tarihiniz:</p>
+                        @Html.TextBoxFor(s => s., new { @class = "form-control", @id = "Kuruluş" })
+                    </div>
+                    <div class="form-group col-md-4">
+                        <p class="lead">İletişim Bilgileriniz:</p>
+                        @Html.TextAreaFor(s => s.İletişim, 5, 30, new { @class = "form-control", @id = "İletişim" })
+                    </div>
+                    <div class="form-group col-md-4">
+                        <p class="lead">Adres Bilgileriniz:</p>
+                        @Html.TextAreaFor(s => s.Adres, 5, 30, new { @class = "form-control", @id = "Adres" })
+                    </div>*@
+
+            </div>
+
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body" style="margin-top: 10px">
+                <div class="form-group col-md-4">
+                    <p class="lead">Tecrübeleriniz: </p>
+                    @Html.TextAreaFor(s => s.Tecrube, 20, 150, new { @class = "form-control", @id = "Tecrube" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Bilgisayar Yetenekleriniz: </p>
+                    @Html.TextAreaFor(s => s.Pc_yetenek, 7, 150, new { @class = "form-control", @id = "Pc_yetenek" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Dil Yetenekleriniz: </p>
+                    @Html.TextAreaFor(s => s.Dil_yetenek, 7, 150, new { @class = "form-control", @id = "Dil_yetenek" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Sertifikalarınız: </p>
+                    @Html.TextAreaFor(s => s.Sertifika, 7, 150, new { @class = "form-control", @id = "Sertifika" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Üyelikleriniz: </p>
+                    @Html.TextAreaFor(s => s.Uyelik, 7, 150, new { @class = "form-control", @id = "Uyelik" })
+                </div>
+            </div>
+
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body" style="margin-top: 10px">
+                <div class="form-group col-md-4">
+                    <p class="lead">Hobileriniz: </p>
+                    @Html.TextAreaFor(s => s.Hobiler, 10, 150, new { @class = "form-control", @id = "Hobiler" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Adres Bilgileriniz: </p>
+                    @Html.TextAreaFor(s => s.Adres, 7, 150, new { @class = "form-control", @id = "Adres" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">İletişim Bilgileriniz: </p>
+                    @Html.TextAreaFor(s => s.İletisim, 7, 150, new { @class = "form-control", @id = "İletisim" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button class="btn btn-success">Güncelle</button>
+                @*<a class="btn btn-default" href="~/İşverenProfil/Kaydet?FirmaAd=@ViewBag.firmaAd">Profili Düzenle &raquo;</a>*@
+                @*@Html.ActionLink("Profili kaydet","Kaydet","İşverenProfil", new { ad = ViewBag.firmaAd})*@
+
+            </div>
+        </div>
+    </div>
+}

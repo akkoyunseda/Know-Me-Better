@@ -1,0 +1,102 @@
+﻿@model tez.Models.TblİşArayan
+   
+@{
+    ViewBag.Title = "Signup2";
+}
+
+
+
+<style>
+
+    body {
+        margin: auto;
+    }
+
+    .panel-body {
+        width: 600px;
+        height: 500px;
+        position: relative;
+        margin: auto;
+    }
+
+    .form-group {
+        width: 600px;
+        height: 600px;
+        position: relative;
+        margin: auto;
+    }
+
+    .input-group {
+        position: relative;
+        margin: auto;
+    }
+</style>
+
+<form method="post" class="form-group" enctype="multipart/form-data">
+    <h2>Aday Kayıt</h2>
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <div class="form-group col-md-6">
+                <label>Adınız:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        @*<span class="glyphicon glyphicon-user"></span>*@
+                    </div>
+                    @Html.TextBoxFor(m => m.Ad, new { @class = "form-control ", @placeholder = "Adınızı giriniz..", @id = "Ad", @autocomplete = "off" })
+
+                </div> @Html.ValidationMessageFor(m => m.Ad, "", new { @class = "text-danger" })
+
+                <br />
+
+                <label> Soyadınız:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        @*<span class="glyphicon glyphicon-user"></span>*@
+                    </div>
+                    @Html.TextBoxFor(m => m.Soyad, new { @class = "form-control ", @placeholder = "Soyadınızı giriniz..", @id = "Soyad", @autocomplete = "off" })
+
+                </div> @Html.ValidationMessageFor(m => m.Soyad, "", new { @class = "text-danger" })
+
+                <br />
+                <label>Kullanıcı Adı:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    @Html.TextBoxFor(m => m.KullanıcıAdı, new { @class = "form-control ", @placeholder = "Kullanıcı adı giriniz..", @id = "KullanıcıAdı", @autocomplete = "off" })
+
+                </div> @Html.ValidationMessageFor(m => m.KullanıcıAdı, "", new { @class = "text-danger" })
+
+                <br />
+
+                <label>E-posta Adresi:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </div>
+                    @Html.TextBoxFor(m => m.Mail, new { @class = "form-control ", @placeholder = "ornek@gmail.com", @id = "Mail", @autocomplete = "off" })
+
+                </div> @Html.ValidationMessageFor(m => m.Mail, "", new { @class = "text-danger" })
+
+                <br />
+
+                <label>Parola:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-lock"></span>
+                    </div>
+                    @Html.TextBoxFor(m => m.Parola, new { @class = "form-control ", @placeholder = "*********", @id = "Parola", @autocomplete = "off" })
+
+                </div> @Html.ValidationMessageFor(m => m.Parola, "", new { @class = "text-danger" })
+
+                <br />
+
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Signup2" class="btn btn-info" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>

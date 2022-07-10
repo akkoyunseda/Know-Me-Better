@@ -1,0 +1,141 @@
+﻿@model IEnumerable<tez.Models.TblİşArayan>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KullanıcıAdı)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parola)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.İletisim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.D_Tarihi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Egitim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tecrube)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sertifika)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Uyelik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pc_yetenek)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dil_yetenek)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hobiler)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surucu_bel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hakkında)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hedefler)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfilFoto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullanıcıAdı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soyad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parola)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.İletisim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.D_Tarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Egitim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tecrube)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sertifika)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uyelik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pc_yetenek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dil_yetenek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hobiler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surucu_bel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hakkında)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hedefler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfilFoto)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

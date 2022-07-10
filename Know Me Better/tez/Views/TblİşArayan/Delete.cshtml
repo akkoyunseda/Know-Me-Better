@@ -1,0 +1,176 @@
+﻿@model tez.Models.TblİşArayan
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TblİşArayan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KullanıcıAdı)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullanıcıAdı)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parola)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parola)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.İletisim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.İletisim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.D_Tarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.D_Tarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Egitim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Egitim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tecrube)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tecrube)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sertifika)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sertifika)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uyelik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uyelik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pc_yetenek)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pc_yetenek)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dil_yetenek)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dil_yetenek)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hobiler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hobiler)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surucu_bel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surucu_bel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hakkında)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hakkında)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hedefler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hedefler)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfilFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfilFoto)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

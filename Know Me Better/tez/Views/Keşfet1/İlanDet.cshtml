@@ -1,0 +1,87 @@
+﻿@model tez.Models.Tbl_İlan
+
+@{
+    ViewBag.Title = "İlanDet";
+    Layout = Layout = "~/Views/Shared/Keşfet1.cshtml";
+}
+
+<h2>İlanDet</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            İlan Sahibi:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ilan_sahibi)
+        </dd>
+
+        <dt>
+            Başlık:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Baslik)
+        </dd>
+
+        <dt>
+            Açıklama:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Acıklama)
+        </dd>
+
+        <dt>
+            Nitelikler:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nitelikler)
+        </dd>
+
+        <dt>
+            Departman:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departman)
+        </dd>
+
+        <dt>
+            Pozisyon:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pozisyon)
+        </dd>
+
+        <dt>
+            Çalışma Şekli:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CalismaSekli)
+        </dd>
+
+        <dt>
+            Tecrübe:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tecrube)
+        </dd>
+       
+    
+
+       
+
+    </dl>
+</div>
+<p>
+  
+    @Html.ActionLink("Geri Dön", "İlanlar")
+</p>

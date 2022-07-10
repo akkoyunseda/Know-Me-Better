@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbKnowMeBetterModelStoreContainer" CdmEntityContainer="DbKnowMeBetterEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DbKnowMeBetterModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Ziyaretci">
+      <EntityTypeMapping TypeName="DbKnowMeBetterModel.Tbl_Ziyaretci">
+        <MappingFragment StoreEntitySet="Tbl_Ziyaretci">
+          <ScalarProperty Name="Pc_yetenek" ColumnName="Pc_yetenek" />
+          <ScalarProperty Name="Fotograf" ColumnName="Fotograf" />
+          <ScalarProperty Name="Sürücü_bel" ColumnName="Sürücü_bel" />
+          <ScalarProperty Name="Uyelik" ColumnName="Uyelik" />
+          <ScalarProperty Name="Hobiler" ColumnName="Hobiler" />
+          <ScalarProperty Name="Dil_Yetenek" ColumnName="Dil_Yetenek" />
+          <ScalarProperty Name="Sertifika" ColumnName="Sertifika" />
+          <ScalarProperty Name="Tecrube" ColumnName="Tecrube" />
+          <ScalarProperty Name="Egitim" ColumnName="Egitim" />
+          <ScalarProperty Name="D_Tarihi" ColumnName="D_Tarihi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tblİşveren">
+      <EntityTypeMapping TypeName="DbKnowMeBetterModel.Tblİşveren">
+        <MappingFragment StoreEntitySet="Tblİşveren">
+          <ScalarProperty Name="Sektör" ColumnName="Sektör" />
+          <ScalarProperty Name="ProfilFoto" ColumnName="ProfilFoto" />
+          <ScalarProperty Name="İlan" ColumnName="İlan" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="İletişim" ColumnName="İletişim" />
+          <ScalarProperty Name="Kuruluş" ColumnName="Kuruluş" />
+          <ScalarProperty Name="Misyon" ColumnName="Misyon" />
+          <ScalarProperty Name="Hakkında" ColumnName="Hakkında" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="FirmaAd" ColumnName="FirmaAd" />
+          <ScalarProperty Name="KullanıcıAd" ColumnName="KullanıcıAd" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblİşArayan">
+      <EntityTypeMapping TypeName="DbKnowMeBetterModel.TblİşArayan">
+        <MappingFragment StoreEntitySet="TblİşArayan">
+          <ScalarProperty Name="ProfilFoto" ColumnName="ProfilFoto" />
+          <ScalarProperty Name="Hedefler" ColumnName="Hedefler" />
+          <ScalarProperty Name="Hakkında" ColumnName="Hakkında" />
+          <ScalarProperty Name="Surucu_bel" ColumnName="Surucu_bel" />
+          <ScalarProperty Name="Hobiler" ColumnName="Hobiler" />
+          <ScalarProperty Name="Dil_yetenek" ColumnName="Dil_yetenek" />
+          <ScalarProperty Name="Pc_yetenek" ColumnName="Pc_yetenek" />
+          <ScalarProperty Name="Uyelik" ColumnName="Uyelik" />
+          <ScalarProperty Name="Sertifika" ColumnName="Sertifika" />
+          <ScalarProperty Name="Tecrube" ColumnName="Tecrube" />
+          <ScalarProperty Name="Egitim" ColumnName="Egitim" />
+          <ScalarProperty Name="D_Tarihi" ColumnName="D_Tarihi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="İletisim" ColumnName="İletisim" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="KullanıcıAdı" ColumnName="KullanıcıAdı" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Başvuranlar">
+      <EntityTypeMapping TypeName="DbKnowMeBetterModel.Tbl_Başvuranlar">
+        <MappingFragment StoreEntitySet="Tbl_Başvuranlar">
+          <ScalarProperty Name="Başvuran_KullanıcıAd" ColumnName="Başvuran_KullanıcıAd" />
+          <ScalarProperty Name="Başvuran_Soyad" ColumnName="Başvuran_Soyad" />
+          <ScalarProperty Name="Başvuran_Ad" ColumnName="Başvuran_Ad" />
+          <ScalarProperty Name="İlan" ColumnName="İlan" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_İlan">
+      <EntityTypeMapping TypeName="DbKnowMeBetterModel.Tbl_İlan">
+        <MappingFragment StoreEntitySet="Tbl_İlan">
+          <ScalarProperty Name="Başvuru" ColumnName="Başvuru" />
+          <ScalarProperty Name="Tecrube" ColumnName="Tecrube" />
+          <ScalarProperty Name="CalismaSekli" ColumnName="CalismaSekli" />
+          <ScalarProperty Name="Departman" ColumnName="Departman" />
+          <ScalarProperty Name="Pozisyon" ColumnName="Pozisyon" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Nitelikler" ColumnName="Nitelikler" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Acıklama" ColumnName="Acıklama" />
+          <ScalarProperty Name="ilan_sahibi" ColumnName="ilan_sahibi" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

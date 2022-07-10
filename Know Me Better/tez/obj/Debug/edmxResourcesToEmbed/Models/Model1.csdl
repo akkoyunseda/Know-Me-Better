@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbKnowMeBetterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="DbKnowMeBetterEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Tbl_Ziyaretci" EntityType="DbKnowMeBetterModel.Tbl_Ziyaretci" />
+    <EntitySet Name="Tblİşveren" EntityType="DbKnowMeBetterModel.Tblİşveren" />
+    <EntitySet Name="TblİşArayan" EntityType="DbKnowMeBetterModel.TblİşArayan" />
+    <EntitySet Name="Tbl_Başvuranlar" EntityType="DbKnowMeBetterModel.Tbl_Başvuranlar" />
+    <EntitySet Name="Tbl_İlan" EntityType="DbKnowMeBetterModel.Tbl_İlan" />
+    <AssociationSet Name="FK_Tbl_Başvuranlar_Tbl_İlan" Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_Tbl_İlan">
+      <End Role="Tbl_İlan" EntitySet="Tbl_İlan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Başvuranlar_TblİşArayan" Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan">
+      <End Role="TblİşArayan" EntitySet="TblİşArayan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Başvuranlar_TblİşArayan1" Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan1">
+      <End Role="TblİşArayan" EntitySet="TblİşArayan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Başvuranlar_TblİşArayan2" Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan2">
+      <End Role="TblİşArayan" EntitySet="TblİşArayan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_İlan_Tbl_Başvuranlar" Association="DbKnowMeBetterModel.FK_Tbl_İlan_Tbl_Başvuranlar">
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+      <End Role="Tbl_İlan" EntitySet="Tbl_İlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tblİşveren_Tbl_İlan" Association="DbKnowMeBetterModel.FK_Tblİşveren_Tbl_İlan">
+      <End Role="Tbl_İlan" EntitySet="Tbl_İlan" />
+      <End Role="Tblİşveren" EntitySet="Tblİşveren" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Tbl_Ziyaretci">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="D_Tarihi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Egitim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Tecrube" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Sertifika" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Dil_Yetenek" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Hobiler" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Uyelik" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sürücü_bel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fotograf" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Pc_yetenek" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Tblİşveren">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullanıcıAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FirmaAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Parola" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Hakkında" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Misyon" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Kuruluş" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="İletişim" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="İlan" Type="Int32" />
+    <Property Name="ProfilFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sektör" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_İlan" Relationship="DbKnowMeBetterModel.FK_Tblİşveren_Tbl_İlan" FromRole="Tblİşveren" ToRole="Tbl_İlan" />
+  </EntityType>
+  <EntityType Name="TblİşArayan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullanıcıAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Parola" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="İletisim" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="D_Tarihi" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Egitim" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Tecrube" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sertifika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Uyelik" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Pc_yetenek" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Dil_yetenek" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Hobiler" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Surucu_bel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Hakkında" Type="String" MaxLength="240" FixedLength="false" Unicode="true" />
+    <Property Name="Hedefler" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="ProfilFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_Başvuranlar" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan" FromRole="TblİşArayan" ToRole="Tbl_Başvuranlar" />
+    <NavigationProperty Name="Tbl_Başvuranlar1" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan1" FromRole="TblİşArayan" ToRole="Tbl_Başvuranlar" />
+    <NavigationProperty Name="Tbl_Başvuranlar2" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan2" FromRole="TblİşArayan" ToRole="Tbl_Başvuranlar" />
+  </EntityType>
+  <EntityType Name="Tbl_Başvuranlar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="İlan" Type="Int32" />
+    <Property Name="Başvuran_Ad" Type="Int32" />
+    <Property Name="Başvuran_Soyad" Type="Int32" />
+    <Property Name="Başvuran_KullanıcıAd" Type="Int32" />
+    <NavigationProperty Name="Tbl_İlan" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_Tbl_İlan" FromRole="Tbl_Başvuranlar" ToRole="Tbl_İlan" />
+    <NavigationProperty Name="TblİşArayan" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan" FromRole="Tbl_Başvuranlar" ToRole="TblİşArayan" />
+    <NavigationProperty Name="TblİşArayan1" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan1" FromRole="Tbl_Başvuranlar" ToRole="TblİşArayan" />
+    <NavigationProperty Name="TblİşArayan2" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan2" FromRole="Tbl_Başvuranlar" ToRole="TblİşArayan" />
+    <NavigationProperty Name="Tbl_İlan1" Relationship="DbKnowMeBetterModel.FK_Tbl_İlan_Tbl_Başvuranlar" FromRole="Tbl_Başvuranlar" ToRole="Tbl_İlan" />
+  </EntityType>
+  <EntityType Name="Tbl_İlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ilan_sahibi" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Acıklama" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Baslik" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Tarih" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Nitelikler" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Pozisyon" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Departman" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CalismaSekli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tecrube" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Başvuru" Type="Int32" />
+    <NavigationProperty Name="Tbl_Başvuranlar" Relationship="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_Tbl_İlan" FromRole="Tbl_İlan" ToRole="Tbl_Başvuranlar" />
+    <NavigationProperty Name="Tbl_Başvuranlar1" Relationship="DbKnowMeBetterModel.FK_Tbl_İlan_Tbl_Başvuranlar" FromRole="Tbl_İlan" ToRole="Tbl_Başvuranlar" />
+    <NavigationProperty Name="Tblİşveren" Relationship="DbKnowMeBetterModel.FK_Tblİşveren_Tbl_İlan" FromRole="Tbl_İlan" ToRole="Tblİşveren" />
+  </EntityType>
+  <Association Name="FK_Tbl_Başvuranlar_Tbl_İlan">
+    <End Type="DbKnowMeBetterModel.Tbl_İlan" Role="Tbl_İlan" Multiplicity="0..1" />
+    <End Type="DbKnowMeBetterModel.Tbl_Başvuranlar" Role="Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_İlan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="İlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Başvuranlar_TblİşArayan">
+    <End Type="DbKnowMeBetterModel.TblİşArayan" Role="TblİşArayan" Multiplicity="0..1" />
+    <End Type="DbKnowMeBetterModel.Tbl_Başvuranlar" Role="Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblİşArayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="Başvuran_Ad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Başvuranlar_TblİşArayan1">
+    <End Type="DbKnowMeBetterModel.TblİşArayan" Role="TblİşArayan" Multiplicity="0..1" />
+    <End Type="DbKnowMeBetterModel.Tbl_Başvuranlar" Role="Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblİşArayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="Başvuran_Soyad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Başvuranlar_TblİşArayan2">
+    <End Type="DbKnowMeBetterModel.TblİşArayan" Role="TblİşArayan" Multiplicity="0..1" />
+    <End Type="DbKnowMeBetterModel.Tbl_Başvuranlar" Role="Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblİşArayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="Başvuran_KullanıcıAd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_İlan_Tbl_Başvuranlar">
+    <End Type="DbKnowMeBetterModel.Tbl_Başvuranlar" Role="Tbl_Başvuranlar" Multiplicity="0..1" />
+    <End Type="DbKnowMeBetterModel.Tbl_İlan" Role="Tbl_İlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Başvuranlar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_İlan">
+        <PropertyRef Name="Başvuru" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tblİşveren_Tbl_İlan">
+    <End Type="DbKnowMeBetterModel.Tbl_İlan" Role="Tbl_İlan" Multiplicity="0..1" />
+    <End Type="DbKnowMeBetterModel.Tblİşveren" Role="Tblİşveren" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_İlan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tblİşveren">
+        <PropertyRef Name="İlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

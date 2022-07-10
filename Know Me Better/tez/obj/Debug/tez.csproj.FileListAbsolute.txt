@@ -1,0 +1,199 @@
+C:\Users\akkoy\source\repos\tez\tez\bin\tez.dll.config
+C:\Users\akkoy\source\repos\tez\tez\bin\tez.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\tez.pdb
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\csc.exe
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\csc.exe.config
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\csc.rsp
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\csi.exe
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\csi.exe.config
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\csi.rsp
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.AppContext.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Console.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.IO.Compression.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Net.Http.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Net.Sockets.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.ValueTuple.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Xml.XPath.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\vbc.exe
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\vbc.exe.config
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\vbc.rsp
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\VBCSCompiler.exe
+C:\Users\akkoy\source\repos\tez\tez\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\akkoy\source\repos\tez\tez\bin\Antlr3.Runtime.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\Newtonsoft.Json.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Helpers.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Mvc.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Optimization.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Razor.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.WebPages.Deployment.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.WebPages.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.WebPages.Razor.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\WebGrease.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Helpers.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Mvc.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Optimization.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.Razor.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.WebPages.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.WebPages.Deployment.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\System.Web.WebPages.Razor.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\Newtonsoft.Json.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\Antlr3.Runtime.pdb
+C:\Users\akkoy\source\repos\tez\tez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\tr\System.Web.Razor.resources.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\akkoy\source\repos\tez\tez\obj\Debug\tez.csprojAssemblyReference.cache
+C:\Users\akkoy\source\repos\tez\tez\obj\Debug\tez.csproj.CoreCompileInputs.cache
+C:\Users\akkoy\source\repos\tez\tez\obj\Debug\tez.csproj.CopyComplete
+C:\Users\akkoy\source\repos\tez\tez\obj\Debug\tez.dll
+C:\Users\akkoy\source\repos\tez\tez\obj\Debug\tez.pdb
+C:\Users\akkoy\source\repos\tez\tez\bin\EntityFramework.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\EntityFramework.SqlServer.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\EntityFramework.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\EntityFramework.SqlServer.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\DotNetZip.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\DotNetZip.pdb
+C:\Users\akkoy\source\repos\tez\tez\bin\DotNetZip.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\Xceed.Document.NET.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\Xceed.Words.NET.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\PagedList.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\PagedList.Mvc.dll
+C:\Users\akkoy\source\repos\tez\tez\bin\PagedList.xml
+C:\Users\akkoy\source\repos\tez\tez\bin\PagedList.Mvc.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tez.dll.config
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tez.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tez.pdb
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\csc.exe
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\csc.exe.config
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\csc.rsp
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\csi.exe
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\csi.exe.config
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\csi.rsp
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.AppContext.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Console.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.IO.Compression.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Net.Http.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Net.Sockets.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.ValueTuple.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Xml.XPath.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\vbc.exe
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\vbc.exe.config
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\vbc.rsp
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\VBCSCompiler.exe
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Antlr3.Runtime.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\DotNetZip.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\EntityFramework.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\EntityFramework.SqlServer.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Newtonsoft.Json.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\PagedList.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\PagedList.Mvc.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Helpers.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Mvc.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Optimization.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Razor.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.WebPages.Deployment.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.WebPages.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.WebPages.Razor.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\WebGrease.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Xceed.Document.NET.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Xceed.Words.NET.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\DotNetZip.pdb
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\DotNetZip.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\EntityFramework.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\EntityFramework.SqlServer.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\PagedList.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\PagedList.Mvc.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Helpers.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Mvc.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Optimization.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.Razor.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.WebPages.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.WebPages.Deployment.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\System.Web.WebPages.Razor.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Newtonsoft.Json.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Antlr3.Runtime.pdb
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tr\System.Web.Razor.resources.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\obj\Debug\tez.csprojAssemblyReference.cache
+C:\Users\akkoy\source\repos\tez - Kopya\tez\obj\Debug\tez.csproj.CoreCompileInputs.cache
+C:\Users\akkoy\source\repos\tez - Kopya\tez\obj\Debug\tez.csproj.CopyComplete
+C:\Users\akkoy\source\repos\tez - Kopya\tez\obj\Debug\tez.dll
+C:\Users\akkoy\source\repos\tez - Kopya\tez\obj\Debug\tez.pdb
+C:\Users\akkoy\source\repos\tez - Kopya\tez\obj\Debug\tez.csproj.ResolveComReference.cache

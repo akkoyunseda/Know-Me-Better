@@ -1,0 +1,100 @@
+﻿@using tez.Models
+@using tez.Controllers
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-color: #4a9aca;
+    }
+    panel-body{
+        background-color: white;
+    }
+</style>
+
+<div class="jumbotron">
+    <h1>Know Me Better</h1>
+    <p class="lead">Know Me Better iş arayan ve işverenlerin birbirlerini daha iyi tanımalarını sağlayan bir web sitesidir.</p>
+    
+</div>
+
+<div class="panel panel-body">
+    <div class="col-md-4">
+        <h2>Üye Olun</h2>
+        <p>
+            Know Me Better ile hayalinizdeki işe başvurmadan veya firmanızdaki açık pozisyona uygun aday aramaya başlamadan önce sizi en doğru
+            biçimde tanıtacak bir profil oluşturun.
+        </p>
+        <p><a class="btn btn-default" data-toggle="modal" data-target="#Modal1">Profil oluştur &raquo;</a></p>
+        @*<p> @Html.ActionLink("Profil Oluşur", "Signin")</p>*@
+    </div>
+    <div class="col-md-4">
+        <h2>CV Oluşturun</h2>
+        <p>Profil oluşturmaya ihtiyaç duymadan da dilediğiniz şablonu kullanarak dijital CV oluşturma hizmetimizden faydalanabilirsiniz.</p>
+        @*<p><a href="~/Views/NewCv/Create" class="btn btn-default">Dijital CV oluştur</a></p>*@
+        @*<p> @Html.ActionLink("Dijital CV Oluştur", "Create")</p>*@
+        <p><a class="btn btn-default" href="~/Home/Create">Dijital Cv Oluştur &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Giriş Yapın</h2>
+        <p>Zaten bir hesabınız var mı?</p>
+        <p><a class="btn btn-default" data-toggle="modal" data-target="#Modal2">Giriş Yap &raquo;</a></p>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class=" close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel"> Sign Up</h4>
+
+            </div>
+            <form method="post">
+                <div class="modal-body">
+
+                    @*<button class="btn btn-success" id="btnFirma">Firma Profili Oluştur</button>*@
+                    <a class="btn btn-success" id="btnFirma" href="~/Home/Signup1">Firma Profili Oluştur</a>
+
+                    <a class="btn btn-success" id="btnAday" href="~/Home/Signup2">Aday Profili Oluştur</a>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Kapat  </button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class=" close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel"> Giriş Yap</h4>
+
+            </div>
+            <form method="post">
+                <div class="modal-body">
+
+                    @*<button class="btn btn-success" id="btnFirma">Firma Profili Oluştur</button>*@
+                    <a class="btn btn-success" id="btnFirma" href="~/Login/Login1">Firma Girişi</a>
+
+                    <a class="btn btn-success" id="btnAday" href="~/Login/Login2">Kullanıcı Girişi</a>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Kapat  </button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

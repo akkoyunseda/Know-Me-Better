@@ -1,0 +1,103 @@
+﻿@model tez.Models.Tbl_İlan
+@{
+    ViewBag.Title = "Yeniİlan";
+}
+
+@using (Html.BeginForm("Ekle","Keşfet1", FormMethod.Post))
+{
+<div class="form-horizontal">
+    <h5>Yeni İlan</h5>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "tex-danger" })
+    <div class=" form-group">
+        <h6>İlan Sahibi:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ilan_sahibi, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>İlan Başlığı:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Baslik, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>İlan Açıklaması:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Acıklama, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>Nitelikler:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Nitelikler, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>Departman:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Departman, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>Posiyon:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Pozisyon, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>Tecrübe:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Tecrube, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>Çalışma Şekli:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CalismaSekli, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class=" form-group">
+        <h6>Adres:</h6>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Adres, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            @*<p><a class="btn btn-default" data-toggle="modal" data-target="#Modal1">Oluştur &raquo;</a></p>*@
+            <input type="submit" value="Ekle" class="btn btn-default" />
+          
+        </div>
+    </div>
+</div>
+}
+@*<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class=" close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel"> Kimlik Doğrulama</h4>
+
+            </div>
+            <form method="post">
+                <div class="modal-body">
+                    @using (Html.BeginForm("Devam", "Keşfet1", FormMethod.Post))
+                    {
+                        <input class="input100" type="text" name="KullanıcıAd" style="color: black" placeholder="Kullanıcı Adınız..." required="" />
+                        <input class="input100" type="text" name="Parola" style="color: black" placeholder="Şifreniz.." required="" />
+                        @Html.ActionLink("Devam Et", "Devam")
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Kapat  </button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>*@
+
+

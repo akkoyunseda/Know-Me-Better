@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbKnowMeBetterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TblBaşvuranlar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="İlan" Type="Int32" />
+    <Property Name="Başvuran_Ad" Type="Int32" />
+    <Property Name="Başvuran_Soyad" Type="Int32" />
+    <Property Name="Başvuran_KullanıcıAd" Type="Int32" />
+    <NavigationProperty Name="Tblİlan" Relationship="Self.FK_TblBaşvuranlar_Tblİlan" FromRole="TblBaşvuranlar" ToRole="Tblİlan" />
+    <NavigationProperty Name="Tblİş_Arayan" Relationship="Self.FK_TblBaşvuranlar_Tblİş_Arayan" FromRole="TblBaşvuranlar" ToRole="Tblİş_Arayan" />
+    <NavigationProperty Name="Tblİş_Arayan1" Relationship="Self.FK_TblBaşvuranlar_Tblİş_Arayan1" FromRole="TblBaşvuranlar" ToRole="Tblİş_Arayan" />
+    <NavigationProperty Name="Tblİş_Arayan2" Relationship="Self.FK_TblBaşvuranlar_Tblİş_Arayan2" FromRole="TblBaşvuranlar" ToRole="Tblİş_Arayan" />
+    <NavigationProperty Name="Tblİlan1" Relationship="Self.FK_Tblİlan_TblBaşvuranlar" FromRole="TblBaşvuranlar" ToRole="Tblİlan" />
+  </EntityType>
+  <EntityType Name="Tblİlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ilan_sahibi" Type="Int32" />
+    <Property Name="Acıklama" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Baslik" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Tarih" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Nitelikler" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Pozisyon" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Departman" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CalismaSekli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tecrube" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Başvuru" Type="Int32" />
+    <NavigationProperty Name="TblBaşvuranlar" Relationship="Self.FK_TblBaşvuranlar_Tblİlan" FromRole="Tblİlan" ToRole="TblBaşvuranlar" />
+    <NavigationProperty Name="TblBaşvuranlar1" Relationship="Self.FK_Tblİlan_TblBaşvuranlar" FromRole="Tblİlan" ToRole="TblBaşvuranlar" />
+    <NavigationProperty Name="TblİşverenProfil" Relationship="Self.FK_TblİşverenProfil_Tblİlan" FromRole="Tblİlan" ToRole="TblİşverenProfil" />
+  </EntityType>
+  <EntityType Name="Tblİş_Arayan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="KullanıcıAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Parola" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Profil" Type="Int32" />
+    <NavigationProperty Name="TblBaşvuranlar" Relationship="Self.FK_TblBaşvuranlar_Tblİş_Arayan" FromRole="Tblİş_Arayan" ToRole="TblBaşvuranlar" />
+    <NavigationProperty Name="TblBaşvuranlar1" Relationship="Self.FK_TblBaşvuranlar_Tblİş_Arayan1" FromRole="Tblİş_Arayan" ToRole="TblBaşvuranlar" />
+    <NavigationProperty Name="TblBaşvuranlar2" Relationship="Self.FK_TblBaşvuranlar_Tblİş_Arayan2" FromRole="Tblİş_Arayan" ToRole="TblBaşvuranlar" />
+    <NavigationProperty Name="Tblİş_Arayan_Profil" Relationship="Self.FK_Tblİş_Arayan_Tblİş_Arayan_Profil" FromRole="Tblİş_Arayan" ToRole="Tblİş_Arayan_Profil" />
+  </EntityType>
+  <EntityType Name="Tblİş_Arayan_Profil">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="İletisim" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="D_Tarihi" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Egitim" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Tecrube" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sertifika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Uyelik" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Pc_yetenek" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Dil_yetenek" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Hobiler" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Surucu_bel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Hakkında" Type="String" MaxLength="240" FixedLength="false" Unicode="true" />
+    <Property Name="Hedefler" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="ProfilFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tblİş_Arayan" Relationship="Self.FK_Tblİş_Arayan_Tblİş_Arayan_Profil" FromRole="Tblİş_Arayan_Profil" ToRole="Tblİş_Arayan" />
+  </EntityType>
+  <EntityType Name="Tblİşveren">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="KullanıcıAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FirmaAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Parola" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Profil" Type="Int32" />
+    <NavigationProperty Name="TblİşverenProfil" Relationship="Self.FK_Tblİşveren_TblİşverenProfil" FromRole="Tblİşveren" ToRole="TblİşverenProfil" />
+  </EntityType>
+  <EntityType Name="TblİşverenProfil">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Hakkında" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Misyon" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Kuruluş" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="İletişim" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="İlan" Type="Int32" />
+    <Property Name="ProfilFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sektör" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tblİlan" Relationship="Self.FK_TblİşverenProfil_Tblİlan" FromRole="TblİşverenProfil" ToRole="Tblİlan" />
+    <NavigationProperty Name="Tblİşveren" Relationship="Self.FK_Tblİşveren_TblİşverenProfil" FromRole="TblİşverenProfil" ToRole="Tblİşveren" />
+  </EntityType>
+  <EntityType Name="TblZiyaretci">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="D_Tarihi" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Egitim" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Tecrube" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sertifika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Pc_yetenek" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Dil_yetenek" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Hobiler" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+    <Property Name="Uyelik" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sürücü_bel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fotograf" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_TblBaşvuranlar_Tblİlan">
+    <End Role="Tblİlan" Type="Self.Tblİlan" Multiplicity="0..1" />
+    <End Role="TblBaşvuranlar" Type="Self.TblBaşvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tblİlan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TblBaşvuranlar">
+        <PropertyRef Name="İlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblBaşvuranlar_Tblİş_Arayan">
+    <End Role="Tblİş_Arayan" Type="Self.Tblİş_Arayan" Multiplicity="0..1" />
+    <End Role="TblBaşvuranlar" Type="Self.TblBaşvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tblİş_Arayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TblBaşvuranlar">
+        <PropertyRef Name="Başvuran_Ad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblBaşvuranlar_Tblİş_Arayan1">
+    <End Role="Tblİş_Arayan" Type="Self.Tblİş_Arayan" Multiplicity="0..1" />
+    <End Role="TblBaşvuranlar" Type="Self.TblBaşvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tblİş_Arayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TblBaşvuranlar">
+        <PropertyRef Name="Başvuran_Soyad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblBaşvuranlar_Tblİş_Arayan2">
+    <End Role="Tblİş_Arayan" Type="Self.Tblİş_Arayan" Multiplicity="0..1" />
+    <End Role="TblBaşvuranlar" Type="Self.TblBaşvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tblİş_Arayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TblBaşvuranlar">
+        <PropertyRef Name="Başvuran_KullanıcıAd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tblİlan_TblBaşvuranlar">
+    <End Role="TblBaşvuranlar" Type="Self.TblBaşvuranlar" Multiplicity="0..1" />
+    <End Role="Tblİlan" Type="Self.Tblİlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblBaşvuranlar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tblİlan">
+        <PropertyRef Name="Başvuru" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblİşverenProfil_Tblİlan">
+    <End Role="Tblİlan" Type="Self.Tblİlan" Multiplicity="0..1" />
+    <End Role="TblİşverenProfil" Type="Self.TblİşverenProfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tblİlan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TblİşverenProfil">
+        <PropertyRef Name="İlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tblİş_Arayan_Tblİş_Arayan_Profil">
+    <End Role="Tblİş_Arayan_Profil" Type="Self.Tblİş_Arayan_Profil" Multiplicity="0..1" />
+    <End Role="Tblİş_Arayan" Type="Self.Tblİş_Arayan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tblİş_Arayan_Profil">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tblİş_Arayan">
+        <PropertyRef Name="Profil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tblİşveren_TblİşverenProfil">
+    <End Role="TblİşverenProfil" Type="Self.TblİşverenProfil" Multiplicity="0..1" />
+    <End Role="Tblİşveren" Type="Self.Tblİşveren" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblİşverenProfil">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tblİşveren">
+        <PropertyRef Name="Profil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbKnowMeBetterEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TblBaşvuranlar" EntityType="Self.TblBaşvuranlar" />
+    <EntitySet Name="Tblİlan" EntityType="Self.Tblİlan" />
+    <EntitySet Name="Tblİş_Arayan" EntityType="Self.Tblİş_Arayan" />
+    <EntitySet Name="Tblİş_Arayan_Profil" EntityType="Self.Tblİş_Arayan_Profil" />
+    <EntitySet Name="Tblİşveren" EntityType="Self.Tblİşveren" />
+    <EntitySet Name="TblİşverenProfil" EntityType="Self.TblİşverenProfil" />
+    <EntitySet Name="TblZiyaretci" EntityType="Self.TblZiyaretci" />
+    <AssociationSet Name="FK_TblBaşvuranlar_Tblİlan" Association="Self.FK_TblBaşvuranlar_Tblİlan">
+      <End Role="Tblİlan" EntitySet="Tblİlan" />
+      <End Role="TblBaşvuranlar" EntitySet="TblBaşvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblBaşvuranlar_Tblİş_Arayan" Association="Self.FK_TblBaşvuranlar_Tblİş_Arayan">
+      <End Role="Tblİş_Arayan" EntitySet="Tblİş_Arayan" />
+      <End Role="TblBaşvuranlar" EntitySet="TblBaşvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblBaşvuranlar_Tblİş_Arayan1" Association="Self.FK_TblBaşvuranlar_Tblİş_Arayan1">
+      <End Role="Tblİş_Arayan" EntitySet="Tblİş_Arayan" />
+      <End Role="TblBaşvuranlar" EntitySet="TblBaşvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblBaşvuranlar_Tblİş_Arayan2" Association="Self.FK_TblBaşvuranlar_Tblİş_Arayan2">
+      <End Role="Tblİş_Arayan" EntitySet="Tblİş_Arayan" />
+      <End Role="TblBaşvuranlar" EntitySet="TblBaşvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tblİlan_TblBaşvuranlar" Association="Self.FK_Tblİlan_TblBaşvuranlar">
+      <End Role="TblBaşvuranlar" EntitySet="TblBaşvuranlar" />
+      <End Role="Tblİlan" EntitySet="Tblİlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblİşverenProfil_Tblİlan" Association="Self.FK_TblİşverenProfil_Tblİlan">
+      <End Role="Tblİlan" EntitySet="Tblİlan" />
+      <End Role="TblİşverenProfil" EntitySet="TblİşverenProfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tblİş_Arayan_Tblİş_Arayan_Profil" Association="Self.FK_Tblİş_Arayan_Tblİş_Arayan_Profil">
+      <End Role="Tblİş_Arayan_Profil" EntitySet="Tblİş_Arayan_Profil" />
+      <End Role="Tblİş_Arayan" EntitySet="Tblİş_Arayan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tblİşveren_TblİşverenProfil" Association="Self.FK_Tblİşveren_TblİşverenProfil">
+      <End Role="TblİşverenProfil" EntitySet="TblİşverenProfil" />
+      <End Role="Tblİşveren" EntitySet="Tblİşveren" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

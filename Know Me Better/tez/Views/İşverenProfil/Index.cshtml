@@ -1,0 +1,70 @@
+﻿@model tez.Models.Tblİşveren
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Güncelle","İşverenProfil",FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="panel panel-heading">
+            <div class="panel-body" style="margin-top: 20px">
+                <div class="form-group col-md-4">
+                    <img src="~/web/images/foto.png" alt="news image" class="img-fluid img-circle" width="160" , height="160">
+                    <br /><br />
+                    <input type="button" value="Profili_Fotoğrafını_Düzenle" class="btn btn-success" />
+                </div>
+                <div class="form-group col-md-4">
+                    <h1>Firma Adı:  @Html.TextBoxFor(s => s.FirmaAd, new { @class = "form-control", @id = "FirmaAd" })</h1>
+
+
+                </div>
+                <br /><br />
+                <div class="form-group col-md-8">
+                    <p class="lead">
+                        Sektör:  @Html.TextBoxFor(s => s.Sektör, new { @class = "form-control", @id = "Sektör" })
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body" style="margin-top: 10px">
+                <div class="form-group col-md-4">
+                    <p class="lead">Hakkınızda:</p>
+                    @Html.TextAreaFor(s => s.Hakkında, 20, 400, new { @class = "form-control", @id = "Hakkında" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Misyonunuz:</p>
+                    @Html.TextAreaFor(s => s.Misyon, 20, 400, new { @class = "form-control", @id = "Misyon" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Kuruluş Tarihiniz:</p>
+                    @Html.TextBoxFor(s => s.Kuruluş, new { @class = "form-control", @id = "Kuruluş" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">İletişim Bilgileriniz:</p>
+                    @Html.TextAreaFor(s => s.İletişim, 5, 30, new { @class = "form-control", @id = "İletişim" })
+                </div>
+                <div class="form-group col-md-4">
+                    <p class="lead">Adres Bilgileriniz:</p>
+                    @Html.TextAreaFor(s => s.Adres, 5, 30, new { @class = "form-control", @id = "Adres" })
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  class="btn btn-success">Güncelle</button>
+                @*<a class="btn btn-default" href="~/İşverenProfil/Kaydet?FirmaAd=@ViewBag.firmaAd">Profili Düzenle &raquo;</a>*@
+                @*@Html.ActionLink("Profili kaydet","Kaydet","İşverenProfil", new { ad = ViewBag.firmaAd})*@
+
+            </div>
+        </div>
+    </div>
+}

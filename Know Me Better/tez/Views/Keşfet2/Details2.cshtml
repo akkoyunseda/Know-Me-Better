@@ -1,0 +1,168 @@
+﻿@model tez.Models.TblİşArayan
+@{
+    ViewBag.Title = "Details2";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Conjoint a Corporate Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Conjoint Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <!-- Custom Theme files -->
+    <link href="/web/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/web/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="/web/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+<body>
+    <div class="sidenav text-center">
+        <div class="side_top">
+            <h3>Know Me Better</h3>
+            <img src="~/web/images/foto.png" alt="news image" class="img-fluid img-circle" style="width:150px; height:150px; margin-top:10px">
+            <p class="banp mx-auto mt-2" style="color: aliceblue">
+                <h2> @Html.DisplayFor(model => model.Ad)  @Html.DisplayFor(model => model.Soyad)</h2>
+                <h5> @Html.DisplayFor(model => model.KullanıcıAdı)</h5>
+
+            </p>
+
+
+        </div>
+        <!-- header -->
+        <header>
+            <div class="nav-top">
+                <form action="#" runat="server">
+                    <nav class="mnu mx-auto">
+
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop">
+                        <ul class="menu">
+                            <li><a class="btn btn-primary mt-md-5 mt-3 agile-link-bnr" href="/Keşfet2/Keşfet2/">Geri Dön</a></li>
+                            @*<li class="active"><a href="#home" class="scroll">Ana Sayfa</a></li>*@
+                            <li class="mt-sm-3"><a href="#about" class="scroll">Hakkında</a></li>
+                            <li class="mt-sm-3"><a href="#edu" class="scroll">Eğitim Bilgileri</a></li>
+                            <li class="mt-sm-3"><a href="#hedef" class="scroll">Hedefler</a></li>
+                            <li class="mt-sm-3"><a href="#tecrube" class="scroll">Tecrübeler</a></li>
+                            <li class="mt-sm-3"><a href="#yetenek" class="scroll">Yetenekler</a></li>
+                            <li class="mt-sm-3"><a href="#uyelik" class="scroll">Sertifika ve Üyelikler</a></li>
+                            <li class="mt-sm-3"><a href="#hobi" class="scroll">Hobiler</a></li>
+                            <li class="mt-sm-3"><a href="#adres" class="scroll">Adres</a></li>
+                            <li class="mt-sm-3"><a href="#contact" class="scroll">İletişim</a></li>
+                           
+
+                        </ul>
+
+                    </nav>
+                </form>
+            </div>
+        </header>
+        <!-- //header -->
+    </div>
+    <div class="main">
+
+        <section class="slide-wrapper" id="about">
+            <h2 class="w3_head mb-4">Hakkında</h2>
+
+            <p class="iner mt-md-5">
+
+                @Html.DisplayFor(model => model.Hakkında)
+            </p>
+
+        </section>
+        <!-- //about -->
+        <!-- services -->
+        <section class="services" id="edu">
+
+            <h3 class="w3_head mb-4">Eğitim Bilgileri</h3>
+
+            <p class="iner mt-md-5">
+                @Html.DisplayFor(model => model.Egitim)
+            </p>
+
+        </section>
+        <!-- //services -->
+        <div class="news" id="hedef">
+            <h3 class="w3_head mb-4 text-left">Hedefler</h3>
+            <p class="iner mt-md-5 text-left">
+                @Html.DisplayFor(model => model.Hedefler)
+            </p>
+
+        </div>
+        <div class="news" id="tecrube">
+            <h3 class="w3_head mb-4 text-left">Tecrübeler</h3>
+            <p class="iner mt-md-5 text-left">
+                @Html.DisplayFor(model => model.Tecrube)
+            </p>
+
+        </div>
+        <div class="news" id="yetenek">
+            <h3 class="w3_head mb-4 text-left">Yetenekler</h3>
+            <p class="iner mt-md-5 text-left">
+                <h5>Bilgisayar Yetenkleri:</h5>
+                @Html.DisplayFor(model => model.Pc_yetenek)
+                <br />
+                <h5>Dil Yetenekleri:</h5>
+                @Html.DisplayFor(model => model.Dil_yetenek)
+            </p>
+
+        </div>
+        <div class="news" id="uyelik">
+            <h3 class="w3_head mb-4 text-left">Sertifika ve Üyelikler</h3>
+            <p class="iner mt-md-5 text-left">
+                <h5>Sertifika:</h5>
+                @Html.DisplayFor(model => model.Sertifika)
+                <br />
+                <h5>Üyelikler:</h5>
+                @Html.DisplayFor(model => model.Uyelik)
+            </p>
+
+        </div>
+        <div class="news" id="hobi">
+            <h3 class="w3_head mb-4 text-left">Hobiler</h3>
+            <p class="iner mt-md-5 text-left">
+                @Html.DisplayFor(model => model.Hobiler)
+            </p>
+
+        </div>
+        <!-- news -->
+        <div class="news" id="adres">
+            <h3 class="w3_head mb-4 text-left">Adres</h3>
+            <p class="iner mt-md-5 text-left">
+                @Html.DisplayFor(model => model.Adres)
+            </p>
+
+        </div>
+        <!-- //news -->
+        <!-- contact -->
+
+        <section class="wedo" id="contact">
+            <h3 class="w3_head mb-4 text-left">İletişim</h3>
+            <p class="iner mt-md-5">
+                @Html.DisplayFor(model => model.İletisim)
+            </p>
+
+          
+        </section>
+        <!-- //contact -->
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1b14abaff8af4bc4bacc040464c56289" Name="Diagram1">
+        <EntityTypeShape EntityType="DbKnowMeBetterModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbKnowMeBetterModel.Tbl_Ziyaretci" Width="1.5" PointX="12" PointY="1.625" />
+        <EntityTypeShape EntityType="DbKnowMeBetterModel.Tblİşveren" Width="1.5" PointX="8" PointY="1.25" />
+        <EntityTypeShape EntityType="DbKnowMeBetterModel.TblİşArayan" Width="1.5" PointX="0.625" PointY="0.5" />
+        <EntityTypeShape EntityType="DbKnowMeBetterModel.Tbl_Başvuranlar" Width="1.5" PointX="2.75" PointY="0.5" />
+        <EntityTypeShape EntityType="DbKnowMeBetterModel.Tbl_İlan" Width="1.5" PointX="5.375" PointY="0.5" />
+        <AssociationConnector Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_Tbl_İlan" />
+        <AssociationConnector Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan" />
+        <AssociationConnector Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan1" />
+        <AssociationConnector Association="DbKnowMeBetterModel.FK_Tbl_Başvuranlar_TblİşArayan2" />
+        <AssociationConnector Association="DbKnowMeBetterModel.FK_Tbl_İlan_Tbl_Başvuranlar" />
+        <AssociationConnector Association="DbKnowMeBetterModel.FK_Tblİşveren_Tbl_İlan" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

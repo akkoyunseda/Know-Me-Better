@@ -1,0 +1,77 @@
+﻿@model IEnumerable<tez.Models.Tblİşveren>
+@{
+    ViewBag.Title = "Firmalar";
+    Layout = Layout = "~/Views/Shared/Keşfet1.cshtml";
+}
+
+@using (@Html.BeginForm("Firmalar", "Keşfet1", FormMethod.Get))
+{
+    <p>
+        <h3>Arama...</h3>@Html.TextBox("ara", null, new { @autocomplete = "off", @placeholder = "Arama.." })
+
+        <button class="btn btn-primary btn-sm" type="submit" value="Ara"> <i class="glyphicon glyphicon-search"></i></button>
+
+        <br />
+    </p>
+}
+<br />
+<table class="table table-bordered styled-table">
+    <tr>
+        <th>Sıra No</th>
+        <th>Kullanıcı Adı</th>
+        <th>Fotoğraf</th>
+        <th>Firma Adı</th>
+        <th>Sektör</th>
+        <th>İletişim</th>
+        <th>Adres</th>
+        <th>Seçenekler</th>
+    </tr>
+    @{ int i = 0;}
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+        <tr>
+            <td>
+                <div>
+                    @{
+                        i++;
+                    }
+                </div>
+                @i
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KullanıcıAd)
+            </td>
+            <td>
+                <div>
+                    <div class="popup-gallery">
+                        <a href="#" class="fa-street-view dropdown-item btn btn-light">
+                            <img src="~/web/images/foto.png" width="50" height="50" />
+                        </a><br />
+                    </div>
+                </div>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirmaAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sektör)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.İletişim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adres)
+            </td>
+            <td>
+
+                @Html.ActionLink("Profile Git", "Details1", new { id = item.ID }) |
+                @Html.ActionLink("İlanlar", "Firmaİlan", new { id = item.ID }) |
+
+            </td>
+
+        </tr>
+        }
+    <tbody>
+</table>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbKnowMeBetterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tbl_Başvuranlar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="İlan" Type="int" />
+    <Property Name="Başvuran_Ad" Type="int" />
+    <Property Name="Başvuran_Soyad" Type="int" />
+    <Property Name="Başvuran_KullanıcıAd" Type="int" />
+  </EntityType>
+  <EntityType Name="Tbl_İlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ilan_sahibi" Type="nvarchar" MaxLength="60" />
+    <Property Name="Acıklama" Type="nvarchar" MaxLength="400" />
+    <Property Name="Baslik" Type="nvarchar" MaxLength="60" />
+    <Property Name="Tarih" Type="nvarchar" MaxLength="20" />
+    <Property Name="Nitelikler" Type="nvarchar" MaxLength="140" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="140" />
+    <Property Name="Pozisyon" Type="nchar" MaxLength="50" />
+    <Property Name="Departman" Type="nvarchar" MaxLength="50" />
+    <Property Name="CalismaSekli" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tecrube" Type="nvarchar" MaxLength="50" />
+    <Property Name="Başvuru" Type="int" />
+  </EntityType>
+  <EntityType Name="Tbl_Ziyaretci">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="100" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="100" />
+    <Property Name="D_Tarihi" Type="nchar" MaxLength="10" />
+    <Property Name="Egitim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tecrube" Type="nvarchar" MaxLength="150" />
+    <Property Name="Sertifika" Type="nvarchar" MaxLength="100" />
+    <Property Name="Pc_yetenek" Type="nvarchar" MaxLength="100" />
+    <Property Name="Dil_Yetenek" Type="nvarchar" MaxLength="100" />
+    <Property Name="Hobiler" Type="nvarchar" MaxLength="100" />
+    <Property Name="Uyelik" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sürücü_bel" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fotograf" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TblİşArayan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullanıcıAdı" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+    <Property Name="Parola" Type="nvarchar" MaxLength="50" />
+    <Property Name="İletisim" Type="nvarchar" MaxLength="60" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="60" />
+    <Property Name="D_Tarihi" Type="nvarchar" MaxLength="10" />
+    <Property Name="Egitim" Type="nvarchar" MaxLength="200" />
+    <Property Name="Tecrube" Type="nvarchar" MaxLength="200" />
+    <Property Name="Sertifika" Type="nvarchar" MaxLength="200" />
+    <Property Name="Uyelik" Type="nvarchar" MaxLength="140" />
+    <Property Name="Pc_yetenek" Type="nvarchar" MaxLength="140" />
+    <Property Name="Dil_yetenek" Type="nvarchar" MaxLength="140" />
+    <Property Name="Hobiler" Type="nvarchar" MaxLength="200" />
+    <Property Name="Surucu_bel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Hakkında" Type="nvarchar" MaxLength="240" />
+    <Property Name="Hedefler" Type="nvarchar" MaxLength="140" />
+    <Property Name="ProfilFoto" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Tblİşveren">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullanıcıAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="FirmaAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+    <Property Name="Parola" Type="nvarchar" MaxLength="50" />
+    <Property Name="Hakkında" Type="nvarchar" MaxLength="400" />
+    <Property Name="Misyon" Type="nvarchar" MaxLength="200" />
+    <Property Name="Kuruluş" Type="nvarchar" MaxLength="10" />
+    <Property Name="İletişim" Type="nvarchar" MaxLength="70" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="100" />
+    <Property Name="İlan" Type="int" />
+    <Property Name="ProfilFoto" Type="nvarchar(max)" />
+    <Property Name="Sektör" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Tbl_Başvuranlar_Tbl_İlan">
+    <End Role="Tbl_İlan" Type="Self.Tbl_İlan" Multiplicity="0..1" />
+    <End Role="Tbl_Başvuranlar" Type="Self.Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_İlan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="İlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Başvuranlar_TblİşArayan">
+    <End Role="TblİşArayan" Type="Self.TblİşArayan" Multiplicity="0..1" />
+    <End Role="Tbl_Başvuranlar" Type="Self.Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblİşArayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="Başvuran_Ad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Başvuranlar_TblİşArayan1">
+    <End Role="TblİşArayan" Type="Self.TblİşArayan" Multiplicity="0..1" />
+    <End Role="Tbl_Başvuranlar" Type="Self.Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblİşArayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="Başvuran_Soyad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Başvuranlar_TblİşArayan2">
+    <End Role="TblİşArayan" Type="Self.TblİşArayan" Multiplicity="0..1" />
+    <End Role="Tbl_Başvuranlar" Type="Self.Tbl_Başvuranlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblİşArayan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Başvuranlar">
+        <PropertyRef Name="Başvuran_KullanıcıAd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_İlan_Tbl_Başvuranlar">
+    <End Role="Tbl_Başvuranlar" Type="Self.Tbl_Başvuranlar" Multiplicity="0..1" />
+    <End Role="Tbl_İlan" Type="Self.Tbl_İlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Başvuranlar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_İlan">
+        <PropertyRef Name="Başvuru" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tblİşveren_Tbl_İlan">
+    <End Role="Tbl_İlan" Type="Self.Tbl_İlan" Multiplicity="0..1" />
+    <End Role="Tblİşveren" Type="Self.Tblİşveren" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_İlan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tblİşveren">
+        <PropertyRef Name="İlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbKnowMeBetterModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Başvuranlar" EntityType="Self.Tbl_Başvuranlar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_İlan" EntityType="Self.Tbl_İlan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Ziyaretci" EntityType="Self.Tbl_Ziyaretci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblİşArayan" EntityType="Self.TblİşArayan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tblİşveren" EntityType="Self.Tblİşveren" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Tbl_Başvuranlar_Tbl_İlan" Association="Self.FK_Tbl_Başvuranlar_Tbl_İlan">
+      <End Role="Tbl_İlan" EntitySet="Tbl_İlan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Başvuranlar_TblİşArayan" Association="Self.FK_Tbl_Başvuranlar_TblİşArayan">
+      <End Role="TblİşArayan" EntitySet="TblİşArayan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Başvuranlar_TblİşArayan1" Association="Self.FK_Tbl_Başvuranlar_TblİşArayan1">
+      <End Role="TblİşArayan" EntitySet="TblİşArayan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Başvuranlar_TblİşArayan2" Association="Self.FK_Tbl_Başvuranlar_TblİşArayan2">
+      <End Role="TblİşArayan" EntitySet="TblİşArayan" />
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_İlan_Tbl_Başvuranlar" Association="Self.FK_Tbl_İlan_Tbl_Başvuranlar">
+      <End Role="Tbl_Başvuranlar" EntitySet="Tbl_Başvuranlar" />
+      <End Role="Tbl_İlan" EntitySet="Tbl_İlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tblİşveren_Tbl_İlan" Association="Self.FK_Tblİşveren_Tbl_İlan">
+      <End Role="Tbl_İlan" EntitySet="Tbl_İlan" />
+      <End Role="Tblİşveren" EntitySet="Tblİşveren" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

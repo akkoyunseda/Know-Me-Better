@@ -1,0 +1,151 @@
+﻿@model tez.Models.Tblİşveren
+@{
+    ViewBag.Title = "Details1";
+    Layout = null;
+}
+
+
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Conjoint a Corporate Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Conjoint Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <!-- Custom Theme files -->
+    <link href="/web/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/web/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="/web/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+<body>
+    <div class="sidenav text-center">
+        <div class="side_top">
+            <h3>Know Me Better</h3>
+            <img src="~/web/images/foto.png" alt="news image" class="img-fluid img-circle" style="width:150px; height:150px; margin-top:10px">
+            <p class="banp mx-auto mt-2" style="color: aliceblue">
+                <h2>@Html.DisplayFor(model => model.FirmaAd)</h2>
+                <h4>@Html.DisplayFor(model => model.Sektör)</h4>
+            </p>
+            @*<%--<h1 class="top_hd mt-2"><a href="index.html">Conjoint</a></h1>--%>*@
+            <p class="top_hdp mt-2">
+                @*<asp:Repeater ID="Repeater6" runat="server">
+                        <ItemTemplate>
+                            <%# Eval("Unvan") %>
+                        </ItemTemplate>
+                    </asp:Repeater>*@
+            </p>
+        </div>
+        <!-- header -->
+        <header>
+            <div class="nav-top">
+                <form action="#" runat="server">
+                    <nav class="mnu mx-auto">
+
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop">
+                        <ul class="menu">
+                            <li><a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="/Keşfet1/Firmalar/">Geri Dön</a></li>
+                            <li class="mt-sm-3"><a href="#about" class="scroll">Hakkımızda</a></li>
+                            <li class="mt-sm-3"><a href="#misyon" class="scroll">Misyonumuz</a></li>
+                            <li class="mt-sm-3"><a href="#addres" class="scroll">Adres</a></li>
+                            <li class="mt-sm-3"><a href="#contact" class="scroll">İletişim</a></li>
+
+                        </ul>
+                        @*<%--<li class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#" role="button">Çıkış Yap</li>--%>*@
+                    </nav>
+                </form>
+            </div>
+        </header>
+        <!-- //header -->
+    </div>
+    <div class="main">
+        @*<div class="form-control" id="home">
+                <div class="container" style="width:auto; height:50px">
+
+                    <div class="mx-auto text-left">
+                        <h3>
+                            Know Me Better
+                        </h3>
+                        <p class="banp mx-auto mt-3">
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>*@
+        @*<div class="form-control" id="home">
+                <div class=""
+            </div>*@
+        <!-- about -->
+        <section class="slide-wrapper" id="about">
+            <h2 class="w3_head mb-4">Hakkımızda</h2>
+
+            <p class="iner mt-md-5">
+
+                @Html.DisplayFor(model => model.Hakkında)
+            </p>
+
+        </section>
+        <!-- //about -->
+        <!-- services -->
+        <section class="services" id="misyon">
+
+            <h3 class="w3_head mb-4">Misyonumuz</h3>
+
+            <p class="iner mt-md-5">
+                @Html.DisplayFor(model => model.Misyon)
+            </p>
+
+        </section>
+        <!-- //services -->
+        <!-- news -->
+        <div class="news" id="addres">
+            <h3 class="w3_head mb-4 text-left">Adres</h3>
+            <p class="iner mt-md-5 text-left">
+                @Html.DisplayFor(model => model.Adres)
+            </p>
+
+        </div>
+        <!-- //news -->
+        <!-- contact -->
+
+        <section class="wedo" id="contact">
+            <h3 class="w3_head mb-4 text-left">İletişim</h3>
+            <p class="iner mt-md-5">
+                @Html.DisplayFor(model => model.İletişim)
+            </p>
+
+
+        </section>
+        <!-- //contact -->
+    </div>
+
+</body>
+</html>
+
+
+
+
